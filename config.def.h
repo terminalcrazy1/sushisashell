@@ -1,2 +1,4 @@
 /* See LICENSE for license details. */
-char PS1[]="Liam Morison $";
+
+/* Declare prompt. Make sure to preserve newline (\n) */
+char PS1[]="Liam Morison $\n";
