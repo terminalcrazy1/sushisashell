@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 void sush_readin() {
-
+  getline();
 }
 
 void sush_splitin() {
