@@ -3,12 +3,18 @@
  * sush are to be minimally POSIX compliant and to
  * follow the suckless philosophy.
  */
-sush_main() {
-  if (onstart == 0) {
-    sush_setup()
-    onstart += 1
+ #include <stdio.h>
+void sush_readline();
+char sush_setup();
+int onstart = 1;
+char *line;
+void sush_readline() {
+  
+}
+int main() {
+  if (onstart == 1) {
+    sush_setup();
+    onstart = 0;
   }
-    sush_readline()
-    sush_splitline()
-    sush_passline()
+    return 0;
 }
