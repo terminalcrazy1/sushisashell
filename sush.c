@@ -9,6 +9,9 @@
 char line[80];
 int position = 0;
 int complete = 0;
+void sush_parseline() {
+  printf("Parse the variable 'line'")
+}
 void sush_readline() {
   funlockfile(stdin);
   while (complete == 0) {
@@ -18,14 +21,17 @@ void sush_readline() {
       line[position] = c;
       printf(line, "\n");
       printf("%lu", strlen(line));
+      complete = 1;
     } else {
       line[position] = c;
       position += 1;
     }
   }
   flockfile(stdin);
+  sush_parseline();
 }
 int main() {
   setbuf(stdout, NULL);
+  printf("> ");
   sush_readline();
 }
