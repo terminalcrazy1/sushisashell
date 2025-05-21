@@ -1,5 +1,5 @@
 /* See LICENSE for license details. See LIMITATIONS for limitations.
- * This is sush. Sush is a simple shell written in C. The only goals of
+ * This is sush. Sush is a simple shell written in C. The only goal of
  * sush is to be tiny and fast.
  */
 #define _POSIX_C_SOURCE 200809L
